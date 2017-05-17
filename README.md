@@ -1,4 +1,9 @@
-# Curriculum-Vitae
-This Repository is the latex code of my CV
-
-The current version of the CV is a 2 pages pdf including Education, Programming Skills, Experience & Research, Selected Curriculum Design, Honor & Awards and Miscellaneous. 
+# 个人latex排版的简历
+<br />
+最近想了想以后面试找工作的问题，就想先做一份简历，苦恼于技术不好学历不高，往后的路还有很长。<br />
+刚好发现这段时间学不进去了，就琢磨起了各种与本专业不相关的，比如各种`文学书籍`和`野外摄影`还有 <br />
+`博客文章`和`latex`排版，这是一种基于`TEX`的排版系统，它能够生成复杂表格和数学公式，在文字对齐 <br />
+上面尤为美观，所以我就抽了时间学习用代码实现这类排版，并把它转了PDF格式，代码在这仓库里，排版极为 <br />
+简洁大方，有需要的老铁可以自行下载，有更好排版的方法希望可以告知噢，共勉! <br />
+[我的博客地址](http://shendengnian.com)下面是我这简历的原版 <br />
+![](https://github.com/shendengnian/latex/index.pdf) 
