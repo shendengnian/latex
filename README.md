@@ -6,4 +6,4 @@
 上面尤为美观，所以我就抽了时间学习用代码实现这类排版，并把它转了PDF格式，代码在这仓库里，排版极为 <br />
 简洁大方，有需要的老铁可以自行下载，有更好排版的方法希望可以告知噢，共勉! <br />
 [我的博客地址](http://shendengnian.com)下面是我这简历的原版 <br />
-![](https://github.com/shendengnian/latex/index.pdf) 
+![我的简历](https://shendengnian.github.io/latex/index.pdf) 
