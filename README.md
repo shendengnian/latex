@@ -1,5 +1,6 @@
 # 个人latex排版的简历
 <br />
+
 最近想了想以后面试找工作的问题，就想先做一份简历，苦恼于技术不好学历不高，往后的路还有很长。<br />
 
 刚好发现这段时间学不进去了，就琢磨起了各种与本专业不相关的，比如各种文学书籍和野外摄影还有 <br />
@@ -10,6 +11,6 @@
 
 简洁大方，有需要的老铁可以自行下载，有更好排版的方法希望可以告知噢，共勉! <br />
 
-我的博客地址(http://shendengnian.com)下面是我这简历的原版 <br />
+博客地址(http://shendengnian.com) <br />
 
-我的简历(https://shendengnian.github.io/latex/index.pdf) 
+简历原版(https://shendengnian.github.io/latex/index.pdf) 
