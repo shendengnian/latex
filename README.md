@@ -14,7 +14,7 @@
 
 [博客地址](http://shendengnian.com) <br />
 
-[简历原版](https://shendengnian.github.io/latex/index.pdf) <br />
+[简历原版](https://shendengnian.github.io/latex/Individual.pdf) <br />
 
 各类教程学习站点附上 <br />
 #
