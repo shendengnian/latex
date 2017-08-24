@@ -1,0 +1,245 @@
+%   2013, by Jason Filley
+%   http://www.snakelegs.org
+%   http://www.jasonfilley.com
+%   Adapted from work originally by Alessandro (http://aleplasmati.comuv.com)
+%	Licensed under the Creative Commons Attribution 3.0 Unported
+%	http://creativecommons.org/licenses/by/3.0/
+%   --- I recommend "Unbeatable Resumes: America's Top Recruiter
+%   --- Reveals What REALLY Gets You Hired," by Tony Beshara. What you
+%   --- think happens with your resume is probably not what happens in
+%   --- reality.  Speaking of reality, you'll probably need to convert the PDF
+%   --- to another format.  See: http://johnmacfarlane.net/pandoc/
+%   --- Why on Earth the online job sites (Monster, Dice, etc.) haven't
+%   --- standardized on a format (XML) escapes me.
+%   And special thanks to Edd Barrett (http://www.theunixzoo.co.uk/wiki/doku.php)
+%   for all the TexLive work on OpenBSD.
+
+%adjust the points
+\documentclass[11pt]{article} %10pt when you add more\ldots
+
+% American, here.  European and others may need to adjust to A4.
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+
+\setlength\topmargin{0in}
+\setlength\headheight{0in}
+\setlength\headsep{0in}
+\setlength\textheight{10in}
+\setlength\textwidth{6.5in}
+\setlength\oddsidemargin{0in}
+\setlength\evensidemargin{0in}
+\setlength\parindent{0pt}
+
+%Colors/Graphics
+\usepackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pifont}   % for ding .  it looks good
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry}
+\usepackage{paralist} % for itemize to squish lists
+\usepackage{xeCJK}
+
+% blue dingbat bullets
+\definecolor{bullets}{HTML}{104170}
+\newcommand{\mybullet}{\mbox{\LARGE\raisebox{+0.2ex}{\tiny{\ding{118}}}}}
+\renewcommand{\labelitemi}{\textcolor{bullets}{\mybullet}}
+
+% Fonts and Tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+%\setsansfont{Goudy Trajan}%http://castletype.com/html/tipoteca/goudy-trajan-regular.html
+%\setmonofont[Scale=MatchLowercase]{Inconsolata} %http://www.levien.com/type/myfonts/inconsolata.html
+%\setromanfont{Cambria} %Calluna is my favorite, but I can't justify the expense for the full set....
+   % http://www.exljbris.com/calluna.html
+%\newfontfamily\headernamefont{Goudy Trajan}
+
+%Setup hyperref package, and colours for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolour}{HTML}{000000}	
+\definecolor{text1}{HTML}{000000}
+\definecolor{headings}{HTML}{701112} 	%dark red
+
+\hypersetup{colorlinks,breaklinks,
+			urlcolor=linkcolour,
+			linkcolor=linkcolour}
+
+\usepackage{fancyhdr}				%custom footer
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{titlesec}				%custom \section
+
+\titleformat{\section}
+	{\color{headings}
+		\scshape\Large\center}{}{0em}{}
+\titlespacing{\section}{0pt}{0pt}{5pt}
+
+\begin{document}
+\color{text1} % set text color for the whole doc
+
+\begin{center}
+{\Huge\color{headings} 沈登年}\\
+\end{center}
+
+\begin{center}
+{\large{{\textcolor{bullets}{\mybullet}}出生年月:1994.06.15 {\textcolor{bullets}{\mybullet}}院校:北京石油大学
+{\textcolor{bullets}{\mybullet}}最高学历:专科\\
+{\textcolor{bullets}{\mybullet}}联系电话:15099738604
+{\textcolor{bullets}{\mybullet}}E- mail:lovesmilegod@qq.com}}\\
+\end{center}
+\color{text1}
+\vspace{-4mm}
+%% Summary %%
+%% NOT an objective, which sucks. %%
+%\section{\textsc{\framebox{求职意向}}}
+\begin{center}\textbf{求职意向}:Web前端开发工程师\end{center}
+
+
+
+\section{\textsc{\framebox{开发技能}}}
+\hrule\smallskip
+ \begin{description}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{1pt}
+  \item[] 熟练使用HBuilder、VSCode、、Sublime Text开发工具。
+  \item[] 熟练使用CommonJS进行模块化开发。
+  \item[] 熟练使用Bootstrap、CSS、HTML5、jQuery等技术进行前端开发。
+  \item[] 熟练使用Git版本管理工具进行项目的同步开发。
+  \item[] 熟悉Apache、Nginx的配置和操作。
+  \item[] 了解Ajax、HTML、CSS、javascript、Json技术，了解jQuery库、了解Vue、React前端框架。
+  \item[] 对Linux系统有一定了解，熟练使用Linux系统的一些常用命令。
+ \end{description}
+
+ \section{\textsc{\framebox{教育背景}}}
+\large{\textbf{北京石油大学|专科 （网教在读）\hfill 2016.10-2018.10}}\\
+\normalsize
+\indent\textit{计算机与科学 \hfill  }
+\hrule\smallskip\vspace{-4mm}
+ \begin{description}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{1pt}
+  \item[核心课程:]电路原理、模拟电子技术、数字逻辑、微型计算机技术、计算机系统结构、计算机网络、高级语言、汇编语言、数据结构、据库原理、编译原理、图形学、人工智能、计算方法概率统计面向对象方法等课程
+  \end{description}
+
+ \section{\textsc{\framebox{工作经历}}}
+ 
+\large{\textbf{东莞科蓬达有限公司\hfill 2016.07-2017.08}}\\
+\normalsize
+\indent\textit{Web前端开发助理 \hfill  }
+\hrule\smallskip\vspace{-4mm}
+ \begin{description}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{1pt}
+  \item[工作描述:]$ $\\\vspace{-4mm}
+
+1、主要负责公司官网平台、jquery、PHP的PC端开发工作
+
+2、完成公司的前端开发任务，并解决运行中出现的各种问题
+
+3、负责与后端研发人员完成前后端的数据交互和展现
+
+4、负责Web前沿技术研究和新技术调研
+
+5、 负责PC端产品编写，解决移动端和PC端适配问题，同时进行代码优化等。
+
+6、了解vue，Zepto，jQuery
+
+7、了解CSS预处理语言stylus
+  \end{description}
+
+\large{\textbf{世金宝外贸有限公司\hfill 2013.09-2016.01}}\\
+\normalsize
+\indent\textit{产品经理 \hfill  }
+  \hrule\smallskip\vspace{-4mm}
+ \begin{description}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{1pt}
+  \item[工作描述:]$ $\\\vspace{-4mm}
+
+1、负责对女性化妆品客户进行市场调研、统计、分析，形成分析报告
+
+2、负责对产品提出优化方案
+
+3、负责公司化妆品包装原型图的设计工作 并协助经理完成所负责产品所有包材的采购事务
+
+4、负责公司主要系列产品在OEM工厂的生产安排工作，以及所有原料、包材、成品的库存管理
+
+5、对所负责系列产品的所有文案进行较对审核，以及所有产品的检验及备案工作
+
+6、按产品系列对条形码进行分段使用管理，以及对所有使用中的条形码所对应的产品进行网上登记
+
+7、负责领导办交的其他工作内容
+
+
+  \end{description}
+  
+ \section{\textsc{\framebox{项目经历}}}
+\large{\textbf{PC端DN购物吧\hfill 2017.06 - 2017.08}}\\
+\normalsize\vspace{-3mm}
+%\indent\textit{Web前端开发助理 \hfill  }
+\hrule\smallskip\vspace{-2mm}
+ \begin{description}
+  \setlength{\itemsep}{2pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{1pt}
+  \item[架构模式:] 前后端完全分离，纯静态方式，分层架构模块化
+  \item[语言环境/库:]JQuery+Webpack+NodeJs
+  \item[技术栈:]HTML+CSS+JS+JQuery
+  \item[开发/代理工具:]Sublime,Chrome,Charles
+  \item[项目发布方式:]云服务器shell脚本自动化发布
+  \item[版本控制:] Git
+\item[项目描述:]
+前后端完全分离方式进行模块化开发，整体开发流程依次为需求分析、技术选型、环境搭建、项目初始化、通用部分抽离、业务开发、上线前适配与发布
+  \item[主要模块又包括五大类:]$ $\\\vspace{-5mm}
+   \begin{description}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+    \item[]用户模块   (数据安全性处理方案，表单同步/异步验证小型SPA开发)
+    \item[]商品模块   (jQuery插件模块化改造，独立组件抽离技巧，多功能列表开发)
+    \item[]购物车模块 (商品状态随时验证方案，模块内部方法调用方式，非Form提交时的数据验证)
+    \item[]订单模块   (Modal式组件封装思想，城市二级联动与复杂表单回填操作)
+    \item[]支付模块   (支付宝支付功能对接，支付状态动态检测，支付成功回执处理，该项目使用支付宝的沙箱环境演示)
+\end{description}
+\item[线上部署:]进行子域名的规划与nginx的配置。线上服务器node搭建，编写自动化发布脚本自动拉取更新git与webpack自动打包删除发布
+\item[访问数据分析:]第三方数据监控工具百度统计进行PV/UV流量来源监控，分析用户特征，进行SEO优化
+\item[项目总结:]由于是个人项目，上线前没有用户数据支撑，无法直接获取IE8用户的占率，要为兼容IE8做好铺垫，其次为了SEO友好，使用了多页应用，很多单页应用的框架不适用，且数据绑定能通过hogan模板渲染，所以没有用到任何框架也不至于开发效率差很多
+\item[源码地址:]\url{http://git.oschina.net/huangyinmei/mmall-fe}
+\item[演示地址:]\url{http://mall.shendengnian.com:88/}
+\end{description}
+
+ \large{\textbf{移动端DN书城吧\hfill 2017.08 - 2017.09}}\\
+\normalsize\vspace{-3mm}
+%\indent\textit{Web前端开发助理 \hfill  }
+\hrule\smallskip\vspace{-2mm}
+  \begin{description}
+  \setlength{\itemsep}{2pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item[架构模式：]敏捷开发，采用迭代、循序渐进的方法在原有的阅读器上分层架构模块化扩展出其他几大模块
+  \item[语言环境/框架/模板：]Webpack+NodeJs+Vue1.0.26+Zepto1.2.0+EJS
+  \item[技术栈：]HTML5+CSS3+JS+Vue1.0.26+Zepto1.2.0+koa
+  \item[开发/代理工具：]HBuilder,Chrome,Charles
+  \item[版本控制：]Git
+  \item[项目描述：]书城是原有webapp阅读器的扩展，该阅读器是整个系统的一个子模块，它是一个用于展示数据，前端交互相对复杂的模块， 采用分层架构模块化又扩展出了其他五大模块依次为书城首页、书架、详情页入口、目录入口与支付入口；
+由于书城数据量较大所以不再适用之前阅读器用json文件模拟数据的方式，转用通过搭建NodeJS服务端环境安装mock.js的方法模拟数据，有些数据也可以通过数据代理接口的方式直接使用Charles工具访问线上服务器环境的API来获得数据；
+采用模块化拆分HTML各页面代码的方法，细节使用Vue数据绑定，动画效果运用CSS3，详情页展示使用静态实现，详情页的数据则使用Vue的数据动态绑定；
+项目总结：移动端轻量化、维护简单、快速开发、高性能。阅读器的部分功能可以使用原生Javascript实现并很好的兼容，大大减少了开发成本与学习成本
+  \item[源码地址：]\url{http://git.oschina.net/huangyinmei/bookCity}
+  \item[演示地址：]\url{http://read.shendengnian.com:88/}
+\end{description}
+
+\hrule\smallskip
+
+{\small
+博客: http://www.shendengnian.com
+
+Github: https://www.github.com/shendengnian
+
+码云：http://git.oschina.net/huangyinmei
+}
+\end{document}  
